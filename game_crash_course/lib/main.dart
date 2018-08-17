@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
-// trinvan vinh
+import 'pages/landing_page.dart';
+import 'pages/quiz_page.dart';
+import 'pages/score_page.dart';
 
-void main() => runApp(new MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: 'Flutter Demo',
-      theme: new ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-    );
-  }
+void main(){
+  runApp(new MaterialApp(
+    home: new LandingPage(),
+  ));
 }
