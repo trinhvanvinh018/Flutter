@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
 void main() => runApp(new RealWorldApp());
 
@@ -28,7 +29,7 @@ class RealWorldState extends State<RealWorldApp>{
                   onPressed: (){
                     print("reloading ....");
                     setState(() {
-
+                      _isLoading=false;
                     });
                   }
               )
